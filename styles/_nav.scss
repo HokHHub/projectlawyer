@@ -1,7 +1,9 @@
-.nav__title {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
+.nav{
+    &__title {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
 }
 
 .main-nav {
@@ -9,11 +11,6 @@
     padding: 15px 0;
     display: flex;
     white-space: nowrap;
-
-    .hero__wrapper {
-        display: flex;
-        justify-content: space-between;
-    }
 
     &__list {
         list-style: none;
@@ -63,4 +60,9 @@
             margin: 0;
         }
     }
+}
+
+.slider__wrapper {
+    display: flex;
+    justify-content: space-between;
 }

@@ -40,21 +40,19 @@
         gap: 24px;
         margin-top: 8px;
     }
-    
-    &__img{
-        max-height: 359px;
-    }
 }
 
 @media screen and (max-width: 1400px) {
     .about{
 
-        &__img{
-            display: none;
+        &__pictures{
+            display: flex;
+            align-items: center;
         }
     
         &__main-block{
             justify-content: center;
+            gap: 30px;
         }
     
         &__title{
@@ -71,8 +69,24 @@
     }
 }
 
+@media screen and (max-width: 1000px) {
+    .about{
+        padding: 60px 0;
+
+        &__pictures{
+            display: none;  
+        }
+
+        &__img{
+            display: none;
+        }
+    }
+}
+
 @media screen and (max-width: 540px) {
     .about{
+        padding: 40px 0;
+
         &__title{
             font-size: 20px;
     

@@ -18,6 +18,10 @@ body {
   background-color: #000;
 }
 
+img {
+  display: block;
+}
+
 .container {
   max-width: 1458px;
   width: 100%;
@@ -25,7 +29,7 @@ body {
   padding: 0 69px;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 1200px) {
   .container {
     padding: 0 24px;
   }
@@ -33,7 +37,6 @@ body {
 .header {
   padding: 10px 0;
   background-color: #000;
-  display: none;
 }
 .header .header__wrapper {
   display: flex;
@@ -117,10 +120,6 @@ body {
   display: flex;
   white-space: nowrap;
 }
-.main-nav .hero__wrapper {
-  display: flex;
-  justify-content: space-between;
-}
 .main-nav__list {
   list-style: none;
   display: flex;
@@ -165,16 +164,20 @@ body {
   margin: 0;
 }
 
-.hero {
+.slider__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider {
   background-image: url("./img/background_header.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
   max-height: 820px;
   text-align: center;
-  display: none;
 }
-.hero__title {
+.slider__title {
   margin-top: 150px;
   color: #FFF;
   font-family: "Nunito Sans";
@@ -184,7 +187,7 @@ body {
   text-transform: uppercase;
   margin-bottom: 8px;
 }
-.hero__subtitle {
+.slider__subtitle {
   color: #4F8FF0;
   font-family: "Nunito Sans";
   font-size: 56px;
@@ -193,10 +196,10 @@ body {
   text-transform: uppercase;
   margin-bottom: 8px;
 }
-.hero__text {
+.slider__text {
   margin-bottom: 48px;
 }
-.hero__description-text {
+.slider__description-text {
   color: #FFF;
   text-align: center;
   font-family: "Nunito Sans";
@@ -205,7 +208,7 @@ body {
   line-height: 120%;
   margin-bottom: 48px;
 }
-.hero__btn {
+.slider__btn {
   display: inline-flex;
   padding: 16px 24px;
   align-items: flex-start;
@@ -259,16 +262,15 @@ body {
   gap: 24px;
   margin-top: 8px;
 }
-.about__img {
-  max-height: 359px;
-}
 
 @media screen and (max-width: 1400px) {
-  .about__img {
-    display: none;
+  .about__pictures {
+    display: flex;
+    align-items: center;
   }
   .about__main-block {
     justify-content: center;
+    gap: 30px;
   }
   .about__title {
     font-size: 24px;
@@ -280,7 +282,21 @@ body {
     margin-top: 12px;
   }
 }
+@media screen and (max-width: 1000px) {
+  .about {
+    padding: 60px 0;
+  }
+  .about__pictures {
+    display: none;
+  }
+  .about__img {
+    display: none;
+  }
+}
 @media screen and (max-width: 540px) {
+  .about {
+    padding: 40px 0;
+  }
   .about__title {
     font-size: 20px;
   }

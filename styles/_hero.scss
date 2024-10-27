@@ -1,11 +1,10 @@
-.hero {
+.slider {
     background-image: url('./img/background_header.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
     max-height: 820px;
     text-align: center;
-    display: none;
 
     &__title {
         margin-top: 150px;
