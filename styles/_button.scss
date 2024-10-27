@@ -1,0 +1,38 @@
+.button {
+    display: flex;
+    padding: 16px 24px;
+    align-items: flex-start;
+    border: 2px solid #4F8FF0;
+    background-color: #4F8FF0;
+    gap: 10px;
+    color: #FFF;
+    text-align: center;
+    font-family: "Nunito Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 120%;
+    /* 16.8px */
+    text-transform: uppercase;
+    white-space: nowrap;
+    max-height: 49px;
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #fff;
+        color: #4F8FF0;
+    }
+
+    &_gray {
+        // max-width: 161px;
+        color: #222;
+        border: 2px solid #E6E6E6;
+        background: #E6E6E6;
+
+        &:hover {
+            color: #222;
+            background-color: #fff;
+        }
+    }
+}

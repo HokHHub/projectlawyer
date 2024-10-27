@@ -1,21 +1,38 @@
 .header {
-    background-image: url('./img/background_header.jpg');
-    height: 100vh;
-    background-repeat: no-repeat;
+    padding: 10px 0;
+    background-color: #000;
+    display: none;
 
-    &__contact {
-        height: 52px;
-        background-color: #010101;
+    .header__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-        &_main {
-            margin: 0 auto;
-            max-width: 1320px;
-            display: flex;
-            justify-content: space-between;
+    &__contacts {
+        display: flex;
+        gap: 20px;
+    }
 
-            .header__contacts{
-                display: flex;
-            }
+    &__phone,
+    &__mail {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        white-space: nowrap;
+        gap: 8px;
+
+        &_link {
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
         }
+    }
+
+    &__call-btn {
+        color: #4F8FF0;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 5px;
     }
 }
