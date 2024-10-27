@@ -1,0 +1,21 @@
+.header {
+    background-image: url('./img/background_header.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+
+    &__contact {
+        height: 52px;
+        background-color: #010101;
+
+        &_main {
+            margin: 0 auto;
+            max-width: 1320px;
+            display: flex;
+            justify-content: space-between;
+
+            .header__contacts{
+                display: flex;
+            }
+        }
+    }
+}
