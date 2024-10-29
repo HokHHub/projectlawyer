@@ -355,6 +355,7 @@ img {
   line-height: 150%;
   text-transform: uppercase;
   margin-bottom: 10px;
+  transition: 0.5s;
 }
 .service__text {
   max-width: 920px;
@@ -366,6 +367,7 @@ img {
   line-height: 120%;
   margin-top: 24px;
   margin-bottom: 48px;
+  transition: 0.5s;
 }
 .service__cards {
   display: grid;
@@ -394,6 +396,10 @@ img {
 }
 .service__card:hover .card__text,
 .service .card:hover .card__text {
+  color: #FFF;
+}
+.service__card:hover .card__text-mobile,
+.service .card:hover .card__text-mobile {
   color: #FFF;
 }
 .service__card:hover .card__icon path,
@@ -598,4 +604,81 @@ img {
   .service__title {
     font-size: 20px;
   }
+}
+.title {
+  font-family: "Nunito Sans";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+
+.lawyers {
+  background-color: #F7F7F7;
+  padding: 80px 0;
+}
+.lawyers__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.lawyers__title {
+  margin-bottom: 10px;
+}
+.lawyers__hr {
+  margin-bottom: 24px;
+}
+.lawyers__text {
+  max-width: 920px;
+  margin-bottom: 48px;
+  text-align: center;
+  font-family: "Nunito Sans";
+  font-size: 16px;
+  line-height: 120%;
+}
+.lawyers__cards {
+  display: flex;
+  gap: 24px;
+}
+.lawyers__card,
+.lawyers .card {
+  position: relative;
+  background-color: #fff;
+  box-shadow: 2px 2px 12px 0px rgba(33, 33, 33, 0.12);
+}
+.lawyers__card:hover .card__hover,
+.lawyers .card:hover .card__hover {
+  opacity: 1;
+}
+.lawyers__card__hover,
+.lawyers .card__hover {
+  position: absolute;
+  background-color: #fff;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+.lawyers__card__portrait,
+.lawyers .card__portrait {
+  display: block;
+}
+.lawyers__card__name,
+.lawyers .card__name {
+  margin-top: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 120%;
+}
+.lawyers__card__job,
+.lawyers .card__job {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 120%;
+  text-transform: lowercase;
+  margin-bottom: 24px;
 }/*# sourceMappingURL=style.css.map */

@@ -16,6 +16,7 @@
         line-height: 150%;
         text-transform: uppercase;
         margin-bottom: 10px;
+        transition: 0.5s;
     }
 
     &__text {
@@ -28,6 +29,7 @@
         line-height: 120%;
         margin-top: 24px;
         margin-bottom: 48px;
+        transition: 0.5s;
     }
 
     &__cards {
@@ -57,6 +59,10 @@
         }
 
         &:hover .card__text{
+            color: #FFF;
+        }
+
+        &:hover .card__text-mobile{
             color: #FFF;
         }
 

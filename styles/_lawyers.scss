@@ -1,0 +1,74 @@
+.lawyers {
+    background-color: #F7F7F7;
+    padding: 80px 0;
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        margin-bottom: 10px;
+    }
+
+    &__hr {
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        max-width: 920px;
+        margin-bottom: 48px;
+        text-align: center;
+        font-family: "Nunito Sans";
+        font-size: 16px;
+        line-height: 120%;
+    }
+
+    &__cards {
+        display: flex;
+        gap: 24px;
+    }
+
+    &__card,
+    .card {
+        position: relative;
+        background-color: #fff;
+        box-shadow: 2px 2px 12px 0px rgba(33, 33, 33, 0.12);
+
+        &:hover .card__hover {
+            opacity: 1;
+        }
+
+        &__hover {
+            position: absolute;
+            background-color: #fff;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            transition: 0.5s;
+        }
+
+        &__portrait {
+            display: block;
+        }
+
+        &__name {
+            margin-top: 24px;
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 120%;
+        }
+
+        &__job {
+            text-align: center;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 120%;
+            text-transform: lowercase;
+            margin-bottom: 24px;
+        }
+    }
+}
