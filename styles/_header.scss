@@ -1,6 +1,7 @@
 .header {
     padding: 10px 0;
     background-color: #000;
+    display: none;
 
     .header__wrapper {
         display: flex;
@@ -29,7 +30,7 @@
     }
 
     &__call-btn {
-        color: #4F8FF0;
+        color: var(--main-color);
         text-decoration: none;
         padding: 5px 10px;
         border-radius: 5px;

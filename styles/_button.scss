@@ -1,9 +1,9 @@
 .button {
     display: flex;
-    padding: 16px 24px;
+    padding: 14px 22px;
     align-items: flex-start;
-    border: 2px solid #4F8FF0;
-    background-color: #4F8FF0;
+    border: 2px solid var(--main-color);
+    background-color: var(--main-color);
     gap: 10px;
     color: #FFF;
     text-align: center;
@@ -21,7 +21,7 @@
 
     &:hover {
         background-color: #fff;
-        color: #4F8FF0;
+        color: var(--main-color);
     }
 
     &_gray {

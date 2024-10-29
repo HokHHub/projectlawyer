@@ -5,6 +5,7 @@
     height: 100vh;
     max-height: 820px;
     text-align: center;
+    display: none;
 
     &__title {
         margin-top: 150px;
@@ -18,7 +19,7 @@
     }
 
     &__subtitle {
-        color: #4F8FF0;
+        color: var(--main-color);
         font-family: "Nunito Sans";
         font-size: 56px;
         font-weight: 600;
@@ -46,8 +47,8 @@
         padding: 16px 24px;
         align-items: flex-start;
         gap: 10px;
-        border: 2px solid #4F8FF0;
-        background: #4F8FF0;
+        border: 2px solid var(--main-color);
+        background: var(--main-color);
         color: #FFF;
         text-align: center;
         font-family: "Nunito Sans";

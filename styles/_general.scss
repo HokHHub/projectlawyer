@@ -3,6 +3,10 @@
     src: url(./fonts/NunitoSans/NunitoSans.ttf);
 }
 
+:root{
+    --main-color: #4F8FF0;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -15,8 +19,8 @@ html{
 
 body {
     font-family: 'Nunito Sans', sans-serif;
-    color: #fff;
-    background-color: #000;
+    color: #222;
+    background-color: #fff;
 }
 
 img{

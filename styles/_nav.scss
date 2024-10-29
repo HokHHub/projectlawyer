@@ -31,7 +31,7 @@
         transition: 0.3s;
 
         &:hover {
-            color: #4F8FF0;
+            color: var(--main-color);
             text-align: center;
             font-family: "Nunito Sans";
             font-size: 18px;
@@ -50,7 +50,7 @@
         text-transform: lowercase;
 
         &__span {
-            color: #4F8FF0;
+            color: var(--main-color);
             font-family: "Nunito Sans";
             font-size: 28px;
             font-weight: 900;

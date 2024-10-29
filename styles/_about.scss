@@ -13,7 +13,7 @@
 
         &_span {
             cursor: pointer;
-            color: #4F8FF0;
+            color: var(--main-color);
             text-decoration: none;
         }
     }
@@ -21,6 +21,7 @@
     &__main-block {
         display: flex;
         justify-content: space-between;
+        align-items: flex-start;
     }
 
     &__text {
@@ -51,7 +52,7 @@
         }
     
         &__main-block{
-            justify-content: center;
+            justify-content: flex-start;
             gap: 30px;
         }
     
