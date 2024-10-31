@@ -83,6 +83,9 @@
             display: block;
             max-height: 320px;
             height: 100%;
+            overflow: hidden;
+            object-position: top;
+            object-fit: cover;
         }
 
         &__description {
@@ -179,6 +182,7 @@
 @media screen and (max-width: 1000px) {
     .lawyers{
         padding: 60px 0;
+        box-shadow: 2px 2px 12px 0px rgba(33, 33, 33, 0.12);
     }
 
     .lawyers .card {
