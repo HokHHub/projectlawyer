@@ -43,7 +43,7 @@ img {
   width: 100%;
   margin: 0 auto;
   padding: 0 69px;
-  overflow: scroll;
+  overflow: auto scroll;
 }
 .container2::-webkit-scrollbar {
   width: 0;
@@ -311,7 +311,7 @@ img {
     margin-top: 12px;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1030px) {
   .about {
     padding: 60px 0;
   }
@@ -638,31 +638,85 @@ img {
   line-height: 120%;
 }
 .lawyers__cards {
-  display: flex;
+  display: inline-flex;
+  justify-content: space-between;
   gap: 24px;
+  margin-right: 24px;
 }
 .lawyers__card,
 .lawyers .card {
   position: relative;
   background-color: #fff;
   box-shadow: 2px 2px 12px 0px rgba(33, 33, 33, 0.12);
+  width: 100%;
+  cursor: url("./img/cursor/cursor_lawyers.svg"), auto;
 }
 .lawyers__card:hover .card__hover,
 .lawyers .card:hover .card__hover {
   opacity: 1;
 }
+.lawyers__card:hover .border_tr_lawyers,
+.lawyers .card:hover .border_tr_lawyers {
+  opacity: 1;
+}
+.lawyers__card:hover .border_tl_lawyers,
+.lawyers .card:hover .border_tl_lawyers {
+  opacity: 1;
+}
+.lawyers__card:hover .border_br_lawyers,
+.lawyers .card:hover .border_br_lawyers {
+  opacity: 1;
+}
+.lawyers__card:hover .border_bl_lawyers,
+.lawyers .card:hover .border_bl_lawyers {
+  opacity: 1;
+}
 .lawyers__card__hover,
 .lawyers .card__hover {
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #fff;
   opacity: 0;
   width: 100%;
   height: 100%;
   transition: 0.5s;
 }
+.lawyers__card__seniority,
+.lawyers .card__seniority {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 120%;
+}
 .lawyers__card__portrait,
 .lawyers .card__portrait {
   display: block;
+  max-height: 320px;
+  height: 100%;
+}
+.lawyers__card__description,
+.lawyers .card__description {
+  margin-top: 40px;
+  color: #000;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 120%;
+  max-width: 265px;
+  margin-bottom: 40px;
+}
+.lawyers__card__description_hover,
+.lawyers .card__description_hover {
+  margin-top: 40px;
+  color: #000;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 120%;
+  max-width: 265px;
+  margin-bottom: 40px;
 }
 .lawyers__card__name,
 .lawyers .card__name {
@@ -673,6 +727,10 @@ img {
   font-weight: 700;
   line-height: 120%;
 }
+.lawyers__card__name_hover,
+.lawyers .card__name_hover {
+  margin-top: 83px;
+}
 .lawyers__card__job,
 .lawyers .card__job {
   text-align: center;
@@ -681,4 +739,100 @@ img {
   line-height: 120%;
   text-transform: lowercase;
   margin-bottom: 24px;
+}
+.lawyers__card__job_hover,
+.lawyers .card__job_hover {
+  margin-bottom: 0;
+}
+
+.border_tr_lawyers,
+.border_tl_lawyers,
+.border_br_lawyers,
+.border_bl_lawyers {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #4F8FF0;
+  z-index: 20;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.border_tr_lawyers {
+  top: 20px;
+  right: 20px;
+  border-left: 0;
+  border-bottom: 0;
+}
+
+.border_tl_lawyers {
+  left: 20px;
+  top: 20px;
+  border-right: 0;
+  border-bottom: 0;
+}
+
+.border_bl_lawyers {
+  bottom: 20px;
+  left: 20px;
+  border-right: 0;
+  border-top: 0;
+}
+
+.border_br_lawyers {
+  bottom: 20px;
+  right: 20px;
+  border-left: 0;
+  border-top: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .lawyers {
+    padding: 60px 0;
+  }
+  .lawyers .card {
+    max-width: 300px;
+  }
+  .lawyers .card__portrait {
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 699px) {
+  .lawyers {
+    padding: 40px 0 46px 0;
+  }
+  .lawyers__cards {
+    margin: 0 24px;
+  }
+  .lawyers .card__portrait {
+    max-width: 250px;
+    max-height: 235px;
+  }
+  .lawyers .card {
+    max-width: 250px;
+    max-height: 348px;
+  }
+  .lawyers .card__description_hover {
+    margin-top: 20px;
+    font-weight: normal;
+  }
+  .lawyers .card__name_hover {
+    margin-top: 36px;
+  }
+  .border_tr_lawyers {
+    top: 16px;
+    right: 16px;
+  }
+  .border_tl_lawyers {
+    left: 16px;
+    top: 16px;
+  }
+  .border_bl_lawyers {
+    bottom: 16px;
+    left: 16px;
+  }
+  .border_br_lawyers {
+    bottom: 16px;
+    right: 16px;
+  }
 }/*# sourceMappingURL=style.css.map */
