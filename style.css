@@ -975,6 +975,7 @@ img {
   justify-content: space-between;
   gap: 24px;
   margin-right: 24px;
+  margin-bottom: 83px;
 }
 .useful__card {
   position: relative;
@@ -999,6 +1000,9 @@ img {
 .useful__card:hover .border_bl_useful {
   opacity: 1;
 }
+.useful__card:hover .useful__card_title {
+  color: #4F8FF0;
+}
 .useful__card_hover {
   position: absolute;
   display: flex;
@@ -1019,8 +1023,9 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 115px;
-  left: 191.42px;
+  left: 50%;
+  top: 135px;
+  transform: translate(-50%, -50%);
   opacity: 0;
   width: 41.165px;
   height: 40px;
@@ -1038,6 +1043,7 @@ img {
   font-size: 16px;
   font-weight: 700;
   line-height: 150%;
+  transition: 0.5s;
 }
 .useful__card_date {
   font-size: 12px;
@@ -1046,10 +1052,12 @@ img {
 }
 .useful__card_description {
   margin-top: 16px;
-  margin-bottom: 24px;
   font-size: 14px;
   font-weight: 400;
   line-height: 120%;
+}
+.useful__button {
+  margin: 0 auto;
 }
 .useful .border_tr_useful,
 .useful .border_tl_useful,
@@ -1095,9 +1103,17 @@ img {
   .useful__title {
     font-size: 24px;
   }
+  .useful__text {
+    margin-bottom: 29px;
+  }
+  .useful__cards {
+    margin-bottom: 64px;
+  }
   .useful__card {
     width: 336px;
-    height: 481px;
+  }
+  .useful__card_hover {
+    width: 336px;
   }
   .useful__card_title {
     margin-top: 16px;
@@ -1111,18 +1127,26 @@ img {
   .useful {
     padding: 40px 0;
   }
-  .useful__text {
-    font-size: 14px;
-  }
   .useful__title {
     font-size: 20px;
   }
+  .useful__text {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
   .useful__cards {
     margin: 0 24px;
+    margin-bottom: 79px;
   }
   .useful__card {
     width: 250px;
-    height: 417px;
+  }
+  .useful__card_hover {
+    width: 250px;
+    height: 200px;
+  }
+  .useful__card_eye-hover {
+    top: 100px;
   }
   .useful__card_title {
     font-size: 14px;
@@ -1130,5 +1154,184 @@ img {
   .useful__card_img {
     width: 250px;
     height: 200px;
+  }
+  .useful .border_tr_useful {
+    top: 20px;
+    right: 20px;
+    border-left: 0;
+    border-bottom: 0;
+  }
+  .useful .border_br_useful {
+    bottom: 231px;
+    right: 20px;
+    border-left: 0;
+    border-top: 0;
+  }
+}
+.footer {
+  padding: 80px 0;
+  background-color: #222;
+}
+.footer__wrapper {
+  display: flex;
+}
+.footer__hr {
+  margin-bottom: 48px;
+  width: 100%;
+  height: 1px;
+  opacity: 0.2;
+  background: #8C8C8C;
+  border: 0;
+}
+.footer__about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+}
+.footer__about_text {
+  max-width: 862px;
+  color: #F8F5F4;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+  text-transform: lowercase;
+}
+.footer__company_title {
+  color: #4F8FF0;
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+.footer__company_text {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 150%;
+  text-transform: lowercase;
+}
+.footer__contacts {
+  display: flex;
+  width: 419px;
+  margin-right: 141px;
+}
+.footer__addresses {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 419px;
+}
+.footer__addresses_about {
+  color: #8C8C8C;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+.footer__addresses_contact {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+}
+.footer__locate {
+  display: flex;
+  gap: 24px;
+}
+.footer__locate_text {
+  display: flex;
+  flex-direction: column;
+}
+.footer__telephone {
+  display: flex;
+  gap: 24px;
+}
+.footer__telephone_text {
+  display: flex;
+  flex-direction: column;
+}
+.footer__email {
+  display: flex;
+  gap: 24px;
+}
+.footer__email_text {
+  display: flex;
+  flex-direction: column;
+}
+.footer__links {
+  display: flex;
+  width: 312px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  margin-right: 24px;
+}
+.footer__links_link {
+  color: #FFF;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+.footer__leader_text {
+  margin-bottom: 24px;
+  max-width: 424px;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+}
+.footer__lawyer {
+  margin-bottom: 16px;
+  display: flex;
+  width: 424px;
+  align-items: center;
+  gap: 24px;
+}
+.footer__lawyer_leader {
+  display: flex;
+  flex-direction: column;
+}
+.footer__lawyer_name {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 150%;
+}
+.footer__lawyer_about {
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 120%;
+}
+
+@media screen and (max-width: 1350px) {
+  .footer__contacts {
+    margin-right: 0;
+  }
+  .footer__about_text {
+    display: none;
+  }
+  .footer__links {
+    display: none;
+  }
+  .footer__wrapper {
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .footer__addresses {
+    gap: 34px;
+  }
+  .footer__addresses_about {
+    font-size: 14px;
+  }
+  .footer__leader {
+    max-width: 334px;
+  }
+  .footer__locate {
+    gap: 16px;
   }
 }/*# sourceMappingURL=style.css.map */
