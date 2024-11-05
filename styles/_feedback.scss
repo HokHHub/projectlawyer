@@ -128,6 +128,12 @@
     }
 }
 
+@media screen and (max-width: 530px) {
+    .feedback__slider{
+        display: none;
+    }
+}
+
 @media screen and (max-width: 450px) {
     .feedback {
         &__card {
