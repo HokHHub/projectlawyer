@@ -2,6 +2,27 @@
     // background: url('/img/bgfeedback.jpeg') lightgray 0px -546px / 100% 215.126% no-repeat, #D9D9D9;
     background-image: url('/img/bgfeedback.jpg');
     padding: 80px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__slider{
+        display: flex;
+        gap: 8px;
+        align-items: center;
+
+        &_element path{
+            fill: var(--main-color);
+        }
+
+        &_element line{
+            stroke: var(--main-color);
+        }
+    }
 
     &__title {
         font-size: 28px;
@@ -34,6 +55,7 @@
 
         &_img {
             border-radius: 100px;
+            max-width: 80px;
         }
 
         &_header {

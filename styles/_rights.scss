@@ -1,0 +1,36 @@
+.rights {
+    padding: 16px 0;
+    background: #181818;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__text {
+        text-decoration: none;
+        color: #FFF;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 120%;
+        cursor: url('./img/cursor/cursor_useful.svg'), auto;
+        transition: 0.3s;
+
+        &:hover {
+            color: #4F8FF0;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .rights__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .rights__text {
+        font-size: 12px;
+    }
+}

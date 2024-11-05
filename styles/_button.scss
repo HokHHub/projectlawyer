@@ -17,7 +17,7 @@
     white-space: nowrap;
     max-height: 49px;
     transition: 0.3s;
-    cursor: pointer;
+    cursor: url('./img/cursor/cursor_useful.svg'), auto;
 
     &:hover {
         background-color: #fff;
@@ -26,12 +26,12 @@
 
     &_gray {
         // max-width: 161px;
-        color: #222;
+        color: var(--secondary-color);
         border: 2px solid #E6E6E6;
         background: #E6E6E6;
 
         &:hover {
-            color: #222;
+            color: var(--secondary-color);
             background-color: #fff;
         }
     }

@@ -1,8 +1,8 @@
 .footer {
     padding: 80px 0;
-    background-color: #222;
+    background-color: var(--secondary-color);
 
-    &__wrapper{
+    &__wrapper {
         display: flex;
     }
 
@@ -32,20 +32,28 @@
     }
 
     &__company {
+        display: flex;
+        flex-direction: column;
+
         &_title {
+            cursor: url('./img/cursor/cursor_useful.svg'), auto;
             color: #4F8FF0;
             font-size: 28px;
             font-weight: 900;
             line-height: 150%;
             text-transform: uppercase;
+            text-decoration: none;
+            margin-bottom: -10px;
         }
 
         &_text {
+            cursor: url('./img/cursor/cursor_useful.svg'), auto;
             color: #FFF;
             font-size: 20px;
             font-weight: 900;
             line-height: 150%;
             text-transform: lowercase;
+            text-decoration: none;
         }
     }
 
@@ -70,10 +78,26 @@
         }
 
         &_contact {
+            text-decoration: none;
             color: #FFF;
             font-size: 16px;
             font-weight: 700;
             line-height: 150%;
+            transition: 0.3s;
+
+            &:hover {
+                color: #4F8FF0;
+                cursor: url('./img/cursor/cursor_useful.svg'), auto;
+            }
+        }
+
+        &_img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 55px;
+            height: 55px;
+            background: #2C2C2C;
         }
     }
 
@@ -84,6 +108,8 @@
         &_text {
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            cursor: url('./img/cursor/cursor_useful.svg'), auto;
         }
     }
 
@@ -94,6 +120,7 @@
         &_text {
             display: flex;
             flex-direction: column;
+            justify-content: center;
         }
     }
 
@@ -104,6 +131,7 @@
         &_text {
             display: flex;
             flex-direction: column;
+            justify-content: center;
         }
     }
 
@@ -122,6 +150,12 @@
             font-weight: 700;
             line-height: 120%;
             text-transform: uppercase;
+            cursor: url('./img/cursor/cursor_useful.svg'), auto;
+            transition: 0.3s;
+
+            &:hover {
+                color: #4F8FF0;
+            }
         }
     }
 
@@ -144,7 +178,7 @@
         align-items: center;
         gap: 24px;
 
-        &_leader{
+        &_leader {
             display: flex;
             flex-direction: column;
         }
@@ -162,41 +196,118 @@
             font-weight: 300;
             line-height: 120%;
         }
+
+        &_img {
+            width: 65px;
+            height: 65px;
+            flex-shrink: 0;
+            border-radius: 100px;
+            overflow: hidden;
+            object-fit: cover;
+            object-position: top;
+        }
     }
 }
 
 @media screen and (max-width: 1350px) {
-    .footer__contacts{
+    .footer__contacts {
         margin-right: 0;
     }
 
-    .footer__about_text{
+    .footer__about_text {
         display: none;
     }
 
-    .footer__links{
+    .footer__links {
         display: none;
     }
 
-    .footer__wrapper{
+    .footer__wrapper {
         justify-content: space-between;
     }
 }
 
 @media screen and (max-width: 1000px) {
-    .footer__addresses{
-        gap: 34px;
+    .footer {
+        padding: 60px 0;
 
-        &_about{
-            font-size: 14px;
+        &__about {
+            margin-bottom: 24px;
         }
     }
 
-    .footer__leader{
+    .footer__addresses {
+        gap: 34px;
+
+        &_about {
+            font-size: 14px;
+        }
+
+        &_contact {
+            font-size: 14px;
+        }
+
+        &_img {
+            width: 45px;
+            height: 45px;
+        }
+
+        &_ico {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    .footer__leader {
         max-width: 334px;
     }
 
-    .footer__locate{
-        gap: 16px
+    .footer__contacts {
+        width: unset;
+    }
+
+    .footer__locate {
+        gap: 16px;
+    }
+
+    .footer__telephone {
+        gap: 16px;
+    }
+
+    .footer__email {
+        gap: 16px;
+    }
+
+    .footer__lawyer {
+        width: unset;
+    }
+}
+
+@media screen and (max-width: 795px) {
+    .footer__wrapper {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        padding: 40px 0;
+    }
+
+    .footer__about {
+        justify-content: center
+    }
+
+    .footer__hr {
+        margin-bottom: 24px;
+    }
+
+    .footer__wrapper {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer__addresses {
+        gap: 16px;
     }
 }

@@ -7,6 +7,7 @@
     <title>Lawyer</title>
     <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -28,14 +29,94 @@
         </div>
     </header>
 
-    <section class="service">
+    <section class="slider">
+        <nav class="main-nav">
+            <div class="container">
+                <div class="slider__wrapper">
+                    <div class="nav__title">
+                        <h1 class="main-nav__title__span">ПРАВОЗАЩИТНИК</h1>
+                        <p class="main-nav__title">юридическая компания</p>
+                    </div>
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item"><a href="#service" class="main-nav__link">Услуги</a></li>
+                        <li class="main-nav__item"><a href="#about" class="main-nav__link">О компании</a></li>
+                        <li class="main-nav__item"><a href="#lawyers" class="main-nav__link">Наши юристы</a></li>
+                        <li class="main-nav__item"><a href="#feedback" class="main-nav__link">Отзывы</a></li>
+                        <li class="main-nav__item"><a href="#useful" class="main-nav__link">Новости</a></li>
+                        <li class="main-nav__item"><a href="#footer" class="main-nav__link">Контакты</a></li>
+                    </ul>
+                    <button class="head__burger burger">
+                        <input id="checkbox" class="burger__checkbox" type="checkbox">
+                        <label for="checkbox" class="burger__label">
+                            <span class="burger__line"></span>
+                            <span class="burger__line2"></span>
+                            <span class="burger__line3"></span>
+                        </label>
+                        <ul class="menu__ul burger__menu">
+                            <div class="burger__menu_links">
+                                <li class="menu__li">
+                                    <a class="menu__a" href="#service">Услуги</a>
+                                </li>
+
+                                <li class="menu__li">
+                                    <a class="menu__a" href="#about">О компании</a>
+                                </li>
+
+                                <li class="menu__li">
+                                    <a class="menu__a" href="#lawyers">Наши юристы</a>
+                                </li>
+
+                                <li class="menu__li">
+                                    <a class="menu__a" href="#feedback">Отзывы</a>
+                                </li>
+
+                                <li class="menu__li">
+                                    <a class="menu__a" href="#useful">Новости</a>
+                                </li>
+
+                                <li class="menu__li">
+                                    <a class="menu__a" href="#footer">Контакты</a>
+                                </li>
+                            </div>
+                        </ul>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="slider__text-wrapper">
+                <h1 class="slider__title">Оказываем весь комплекс</h1>
+                <p class="slider__subtitle">Юридических услуг</p>
+                <div class="slider__text">
+                    <p class="slider__description-text">Давно выяснено, что при оценке дизайна и композиции читаемый
+                        текст
+                        мешает сосредоточиться. Lorem Ipsum <br> используют потому, что тот обеспечивает более или менее
+                        стандартное заполнение.</p>
+                    <a href="#" class="button slider__btn">Наши услуги</a>
+                </div>
+            </div>
+
+            <div class="slider__manage">
+                <div class="slider__manage_number">
+                    <span class="slider__manage_number_active"></span>
+                    <span class="slider__manage_number_inactive"></span>
+                    <span class="slider__manage_number_inactive2"></span>
+                </div>
+
+                <div class="slider__manage_button">
+                    <img src="./img/arrowleft.svg" alt="">
+                    <img src="./img/slash.svg" alt="">
+                    <img src="./img/arrowright.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service" id="service">
         <div class="container">
             <div class="service__header">
                 <h2 class="title service__title">Наши услуги</h2>
                 <hr class="hr service__hr">
-                <p class="service__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает
-                    сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное
-                    заполнение шаблона</p>
             </div>
         </div>
         <div class="container2">
@@ -58,8 +139,6 @@
                         <p class="card__text">Процедуру банкротства физических лиц в России регулирует
                             закон «О
                             несостоятельности (банкротстве)».
-                        <p class="card__text-mobile">Процедуру банкротства <br> физических лиц в России <br> регулирует
-                            закон «О несостоятельности (банкротстве)».</p>
                     </div>
                 </article>
 
@@ -81,9 +160,6 @@
                         <p class="card__text">Инициирование, оформление, осуществление сделки и достижение результата —
                             это
                             именно то, чем мы занимаемся каждый день.</p>
-                        <p class="card__text-mobile">Инициирование, оформление, <br> осуществление сделки и <br>
-                            достижение результата —
-                            это именно то, чем мы занимаемся каждый день.</p>
                     </div>
                 </article>
 
@@ -104,9 +180,6 @@
                     <div class="text-mobile">
                         <p class="card__text">Корпоративные споры – споры, связанные с созданием юрлица, управлением или
                             участием в нем</p>
-                        <p class="card__text-mobile">Корпоративные споры – споры, <br> связанные с созданием юрлица,
-                            <br> управлением или
-                            участием в нем
                         </p>
                     </div>
                 </article>
@@ -128,8 +201,6 @@
                     <div class="text-mobile">
                         <p class="card__text">Консультируем по различным вопросам в области недвижимости, включая
                             градостроительное регулирование, земельные отношения</p>
-                        <p class="card__text-mobile">Консультируем по различным <br> вопросам в области <br>
-                            недвижимости, включая градостроительное регулирование, земельные отношения</p>
                     </div>
                 </article>
 
@@ -151,9 +222,6 @@
                         <p class="card__text">Для возврата страховой премии нужно подготовить следующий пакет
                             документов:
                             паспорт страхователя; оригинал страхового полиса</p>
-                        <p class="card__text-mobile">Для возврата страховой премии <br> нужно подготовить следующий <br>
-                            пакет документов:
-                            паспорт страхователя; оригинал страхового полиса</p>
                     </div>
                 </article>
 
@@ -174,9 +242,6 @@
                     <div class="text-mobile">
                         <p class="card__text">Сопровождение налоговых проверок на любой стадии, анализ и подготовка
                             документов, защита при налоговых спорах.</p>
-                        <p class="card__text-mobile">Сопровождение налоговых <br> проверок на любой стадии, <br> анализ
-                            и подготовка
-                            документов, защита при налоговых спорах.</p>
                     </div>
                 </article>
             </div>
@@ -186,38 +251,9 @@
         </div>
     </section>
 
-    <section class="slider">
-        <nav class="main-nav">
-            <div class="container">
-                <div class="slider__wrapper">
-                    <div class="nav__title">
-                        <h1 class="main-nav__title__span">ПРАВОЗАЩИТНИК</h1>
-                        <p class="main-nav__title">юридическая компания</p>
-                    </div>
-                    <ul class="main-nav__list">
-                        <li class="main-nav__item"><a href="#" class="main-nav__link">Услуги</a></li>
-                        <li class="main-nav__item"><a href="#" class="main-nav__link">О компании</a></li>
-                        <li class="main-nav__item"><a href="#" class="main-nav__link">Наши юристы</a></li>
-                        <li class="main-nav__item"><a href="#" class="main-nav__link">Отзывы</a></li>
-                        <li class="main-nav__item"><a href="#" class="main-nav__link">Новости</a></li>
-                        <li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div class="container">
-            <h1 class="slider__title">Оказываем весь комплекс</h1>
-            <p class="slider__subtitle">Юридических услуг</p>
-            <div class="slider__text">
-                <p class="slider__description-text">Давно выяснено, что при оценке дизайна и композиции читаемый текст
-                    мешает сосредоточиться. Lorem Ipsum <br> используют потому, что тот обеспечивает более или менее
-                    стандартное заполнение.</p>
-                <a href="#" class="slider__btn">Наши услуги</a>
-            </div>
-        </div>
-    </section>
 
-    <section class="about">
+
+    <section class="about" id="about">
         <div class="container">
             <div class="about__main-block">
                 <div class="about__text">
@@ -247,7 +283,7 @@
         </div>
     </section>
 
-    <section class="lawyers">
+    <section class="lawyers" id="lawyers">
         <div class="container">
             <div class="lawyers__header">
                 <h2 class="title lawyers__title">Наши юристы</h2>
@@ -350,9 +386,31 @@
         </div>
     </section>
 
-    <section class="feedback">
+    <section class="feedback" id="feedback">
         <div class="container">
-            <h2 class="feedback__title">Что о нас говорят клиенты</h2>
+            <div class="feedback__wrapper">
+                <h2 class="feedback__title">Что о нас говорят клиенты</h2>
+                <div class="feedback__slider">
+                    <svg class="feedback__slider_element" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="20px/arrowleft">
+                            <path id="Vector"
+                                d="M14.3055 18.3333L5.97217 9.99996L14.3055 1.66663L15.7847 3.14579L8.9305 9.99996L15.7847 16.8541L14.3055 18.3333Z"
+                                fill="#E6E6E6" />
+                        </g>
+                    </svg>
+                    <svg class="feedback__slider_element" width="16" height="31" viewBox="0 0 16 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="1.07337" y1="29.9422" x2="15.1013" y2="1.18083" stroke="#E6E6E6" stroke-width="2" />
+                    </svg>
+                    <svg class="feedback__slider_element" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="20px/arrowright">
+                            <path id="Vector"
+                                d="M6.68742 18.3333L5.20825 16.8541L12.0624 9.99996L5.20825 3.14579L6.68742 1.66663L15.0208 9.99996L6.68742 18.3333Z"
+                                fill="#E6E6E6" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+
             <hr class="hr feedback__hr">
         </div>
 
@@ -404,7 +462,7 @@
 
     </section>
 
-    <section class="useful">
+    <section class="useful" id="useful">
         <div class="container">
             <div class="useful__header">
                 <h2 class="title useful__title">Полезные материалы</h2>
@@ -487,12 +545,12 @@
             <button class="button useful__button">Все новости</button>
     </section>
 
-    <section class="footer">
+    <section class="footer" id="footer">
         <div class="container">
             <div class="footer__about">
                 <div class="footer__company">
-                    <p class="footer__company_title">Правозащитник</p>
-                    <p class="footer__company_text">Юридическая компания</p>
+                    <a href="#header" class="footer__company_title">Правозащитник</a>
+                    <a href="#header" class="footer__company_text">Юридическая компания</a>
                 </div>
                 <p class="footer__about_text">Предварительные выводы неутешительны: синтетическое тестирование, а также
                     свежий взгляд на привычные вещи — безусловно открывает новые горизонты для экономической
@@ -505,7 +563,9 @@
                 <div class="footer__contacts">
                     <div class="footer__addresses">
                         <div class="footer__locate">
-                            <img src="./img/icons/32px/map.svg" alt="">
+                            <div class="footer__addresses_img">
+                                <img class="footer__addresses_ico" src="./img/icons/32px/map.svg" alt="">
+                            </div>
                             <div class="footer__locate_text">
                                 <p class="footer__addresses_about">Наш адрес</p>
                                 <p class="footer__addresses_contact">г. Одинцово, пр. Будапештсткая, 40</p>
@@ -513,18 +573,23 @@
                         </div>
 
                         <div class="footer__telephone">
-                            <img src="./img/icons/32px/phone.svg" alt="">
+                            <div class="footer__addresses_img">
+                                <img class="footer__addresses_ico" src="./img/icons/32px/phone.svg" alt="">
+                            </div>
                             <div class="footer__telephone_text">
                                 <p class="footer__addresses_about">Запись на консультанцию</p>
-                                <p class="footer__addresses_contact">+7 (922) 022-94-82</p>
+                                <a href="tel:+79220229482" class="footer__addresses_contact">+7 (922) 022-94-82</a>
                             </div>
                         </div>
 
                         <div class="footer__email">
-                            <img src="./img/icons/32px/mail.svg" alt="">
+                            <div class="footer__addresses_img">
+                                <img class="footer__addresses_ico" src="./img/icons/32px/mail.svg" alt="">
+                            </div>
                             <div class="footer__email_text">
                                 <p class="footer__addresses_about">Корреспонденция</p>
-                                <p class="footer__addresses_contact">+7 (922) 022-94-82</p>
+                                <a href="mailto:janis62@yahoo.com"
+                                    class="footer__addresses_contact">janis62@yahoo.com</a>
                             </div>
                         </div>
                     </div>
@@ -541,7 +606,7 @@
 
                 <div class="footer__leader">
                     <div class="footer__lawyer">
-                        <img src="./img/ava_mironov.png" alt="">
+                        <img class="footer__lawyer_img" src="./img/ava_mironov.png" alt="">
                         <div class="footer__lawyer_leader">
                             <p class="footer__lawyer_name">Миронов Александр</p>
                             <p class="footer__lawyer_about">Ведущий юрист</p>
@@ -554,6 +619,15 @@
 
                     <button class="button footer__leader_button">Задать вопрос юристу</button>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="rights">
+        <div class="container">
+            <div class="rights__wrapper">
+                <p class="rights__text">Все права защищены, 2023</p>
+                <a class="rights__text">Политика обработки персональных данных</a>
             </div>
         </div>
     </section>

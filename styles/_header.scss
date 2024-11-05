@@ -1,7 +1,6 @@
 .header {
     padding: 10px 0;
     background-color: #000;
-    display: none;
 
     .header__wrapper {
         display: flex;
@@ -21,18 +20,46 @@
         align-items: center;
         white-space: nowrap;
         gap: 8px;
-
+        
         &_link {
             color: #fff;
             text-decoration: none;
             font-size: 14px;
+            transition: 0.3s;
+            cursor: url('./img/cursor/cursor_useful.svg'), auto;
+
+            &:hover{
+                color: var(--main-color);
+            }
         }
     }
-
+    
     &__call-btn {
+        cursor: url('./img/cursor/cursor_useful.svg'), auto;
         color: var(--main-color);
         text-decoration: none;
         padding: 5px 10px;
         border-radius: 5px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header__mail{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .header__phone{
+        gap: 4px;
+    }
+
+    .header__phone_link{
+        font-size: 12px;
+    }
+
+    .header__call-btn{
+        font-size: 12px;
     }
 }

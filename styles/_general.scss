@@ -5,6 +5,7 @@
 
 :root{
     --main-color: #4F8FF0;
+    --secondary-color: #222;
 }
 
 * {
@@ -19,7 +20,7 @@ html{
 
 body {
     font-family: 'Nunito Sans', sans-serif;
-    color: #222;
+    color: var(--secondary-color);
     background-color: #fff;
 }
 

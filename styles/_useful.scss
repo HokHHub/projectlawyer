@@ -130,7 +130,7 @@
         }
     }
 
-    &__button{
+    &__button {
         margin: 0 auto;
     }
 
@@ -162,14 +162,14 @@
     }
 
     .border_bl_useful {
-        bottom: 231px;
+        bottom: 206px;
         left: 20px;
         border-right: 0;
         border-top: 0;
     }
 
     .border_br_useful {
-        bottom: 231px;
+        bottom: 206px;
         right: 32px;
         border-left: 0;
         border-top: 0;
@@ -210,6 +210,26 @@
                 height: 270px;
             }
         }
+    }
+
+    .useful .border_tr_useful {
+        top: 20px;
+        right: 20px;
+        border-left: 0;
+        border-bottom: 0;
+    }
+
+    .useful .border_br_useful {
+        bottom: 222px;
+        right: 20px;
+        border-left: 0;
+        border-top: 0;
+    }
+
+    .useful .border_bl_useful {
+        bottom: 222px;
+        right: 20px;
+        border-top: 0;
     }
 }
 
@@ -254,20 +274,26 @@
                 height: 200px;
             }
         }
+    }
 
-        .border_tr_useful {
-            top: 20px;
-            right: 20px;
-            border-left: 0;
-            border-bottom: 0;
-        }
+    .useful .border_tr_useful {
+        top: 20px;
+        right: 20px;
+        border-left: 0;
+        border-bottom: 0;
+    }
 
-        .border_br_useful {
-            bottom: 231px;
-            right: 20px;
-            border-left: 0;
-            border-top: 0;
-        }
+    .useful .border_br_useful {
+        bottom: 270px;
+        right: 20px;
+        border-left: 0;
+        border-top: 0;
+    }
+
+    .useful .border_bl_useful {
+        bottom: 270px;
+        right: 20px;
+        border-top: 0;
     }
 
 }

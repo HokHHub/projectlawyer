@@ -1,4 +1,5 @@
-.nav{
+.nav {
+
     &__title {
         display: flex;
         align-items: flex-start;
@@ -27,7 +28,7 @@
         font-size: 18px;
         font-weight: 700;
         line-height: 120%;
-        text-decoration: none;
+        text-decoration-color: transparent;
         transition: 0.3s;
 
         &:hover {
@@ -37,7 +38,7 @@
             font-size: 18px;
             font-weight: 700;
             line-height: 120%;
-            text-decoration-line: underline;
+            text-decoration-color: var(--main-color);
         }
     }
 
@@ -65,4 +66,31 @@
 .slider__wrapper {
     display: flex;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 1160px) {
+    .main-nav__list {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .main-nav__title__span {
+        font-size: 22px;
+    }
+
+    .main-nav__title {
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .main-nav__title__span {
+        font-size: 20px;
+    }
+
+    .main-nav__title {
+        font-size: 16px;
+    }
 }
