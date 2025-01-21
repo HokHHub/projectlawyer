@@ -22,6 +22,18 @@
         &_element line{
             stroke: var(--main-color);
         }
+
+        &_arrow path{
+            fill: var(--main-color);
+        }
+
+        &_arrow{
+            cursor: pointer;
+        }
+
+        &_arrow line{
+            stroke: var(--main-color);
+        }
     }
 
     &__title {
@@ -55,7 +67,9 @@
 
         &_img {
             border-radius: 100px;
-            max-width: 80px;
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
         }
 
         &_header {
@@ -116,7 +130,6 @@
 
 @media screen and (max-width: 699px) {
     .feedback {
-
         &__cards {
             margin-left: 24px;
             margin-right: 30px;

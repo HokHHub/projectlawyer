@@ -35,9 +35,19 @@
         margin-bottom: 83px;
     }
 
+    &__allcards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+        gap: 35px;
+        /* margin-right: 24px; */
+        margin-bottom: 83px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     &__card {
         position: relative;
-        width: 424px;
+        width: 100%;
         cursor: url('./img/cursor/cursor_useful.svg'), auto;
 
         &:hover .useful__card_hover {
@@ -75,7 +85,10 @@
             align-items: center;
             background-color: rgba(79, 143, 240, 0.4);
             opacity: 0;
-            width: 424px;
+            // width: 424px;
+            width: 100%;
+            height: 270px;
+            object-fit: cover;
             height: 270px;
             transition: 0.5s;
         }
@@ -103,8 +116,10 @@
         &_img {
             display: block;
             margin-bottom: 24.5px;
-            width: 424px;
+            // width: 424px;
             height: 270px;
+            width: 100%;
+            object-fit: cover;
         }
 
         &_title {

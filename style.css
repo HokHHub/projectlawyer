@@ -246,6 +246,7 @@ img {
   background-size: cover;
   background-position: center;
   text-align: center;
+  transition: 0.5s ease-out;
 }
 .slider__text-wrapper {
   display: flex;
@@ -302,12 +303,34 @@ img {
   padding-bottom: 36px;
   justify-content: flex-end;
 }
-.slider__manage_number_active {
+.slider__manage_number_active:first-child {
   position: absolute;
   border: 2px solid var(--main-color);
   height: 40px;
   top: -8px;
   left: 0;
+}
+.slider__manage_number_active {
+  position: absolute;
+  border: 2px solid var(--main-color);
+  height: 40px;
+  top: -8px;
+  left: 10px;
+}
+.slider__manage_number_active:last-child {
+  position: absolute;
+  border: 2px solid var(--main-color);
+  height: 40px;
+  top: -8px;
+  left: 20px;
+}
+.slider__manage_number_inactive:first-child {
+  position: absolute;
+  border: 2px solid #FFF;
+  height: 24px;
+  top: 8px;
+  left: 0;
+  cursor: pointer;
 }
 .slider__manage_number_inactive {
   position: absolute;
@@ -315,17 +338,25 @@ img {
   height: 24px;
   top: 8px;
   left: 10px;
+  cursor: pointer;
 }
-.slider__manage_number_inactive2 {
+.slider__manage_number_inactive:last-child {
   position: absolute;
   border: 2px solid #FFF;
   height: 24px;
   top: 8px;
   left: 20px;
+  cursor: pointer;
 }
 .slider__manage_button {
   display: flex;
   gap: 8px;
+}
+.slider__manage .button__right {
+  cursor: pointer;
+}
+.slider__manage .button__left {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1000px) {
@@ -978,6 +1009,15 @@ img {
 .feedback__slider_element line {
   stroke: var(--main-color);
 }
+.feedback__slider_arrow path {
+  fill: var(--main-color);
+}
+.feedback__slider_arrow {
+  cursor: pointer;
+}
+.feedback__slider_arrow line {
+  stroke: var(--main-color);
+}
 .feedback__title {
   font-size: 28px;
   font-weight: 800;
@@ -1005,7 +1045,10 @@ img {
 }
 .feedback__card_img {
   border-radius: 100px;
-  max-width: 80px;
+  width: 80px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .feedback__card_header {
   display: flex;
@@ -1114,9 +1157,18 @@ img {
   margin-right: 24px;
   margin-bottom: 83px;
 }
+.useful__allcards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  gap: 35px;
+  /* margin-right: 24px; */
+  margin-bottom: 83px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .useful__card {
   position: relative;
-  width: 424px;
+  width: 100%;
   cursor: url("./img/cursor/cursor_useful.svg"), auto;
 }
 .useful__card:hover .useful__card_hover {
@@ -1147,7 +1199,10 @@ img {
   align-items: center;
   background-color: rgba(79, 143, 240, 0.4);
   opacity: 0;
-  width: 424px;
+  width: 100%;
+  height: 270px;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 270px;
   transition: 0.5s;
 }
@@ -1172,8 +1227,10 @@ img {
 .useful__card_img {
   display: block;
   margin-bottom: 24.5px;
-  width: 424px;
   height: 270px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .useful__card_title {
   margin-bottom: 16px;

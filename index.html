@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <script src="./script.js" type="module" defer></script>
 </head>
 
 <body>
@@ -98,15 +99,15 @@
 
             <div class="slider__manage">
                 <div class="slider__manage_number">
-                    <span class="slider__manage_number_active"></span>
-                    <span class="slider__manage_number_inactive"></span>
-                    <span class="slider__manage_number_inactive2"></span>
+                    <span class="slider__manage_numbers slider__manage_number_active"></span>
+                    <span class="slider__manage_numbers slider__manage_number_inactive"></span>
+                    <span class="slider__manage_numbers slider__manage_number_inactive"></span>
                 </div>
 
                 <div class="slider__manage_button">
-                    <img src="./img/arrowleft.svg" alt="">
+                    <img class="button__left" src="./img/arrowleft.svg" alt="">
                     <img src="./img/slash.svg" alt="">
-                    <img src="./img/arrowright.svg" alt="">
+                    <img class="button__right" src="./img/arrowright.svg" alt="">
                 </div>
             </div>
         </div>
@@ -262,14 +263,14 @@
                                 class="about__title_span">ПРАВОЗАЩИТНИК</a></h2>
                         <hr class="hr about__hr">
                     </div>
-                    <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает
+                    <p class="about__txt">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает
                         сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное
                         заполнение</p>
-                    <p>Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда
+                    <p class="about__txt">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда
                         приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не
                         напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите
                         какой-нибудь шутки, скрытой в середине абзаца.</p>
-                    <p>За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии
+                    <p class="about__txt">За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии
                         появились по ошибке, некоторые - намеренно (например, юмористические варианты).</p>
                     <div class="about__btns">
                         <button class="button about__button">История компании</button>
@@ -296,7 +297,7 @@
 
         <div class="container2">
             <div class="lawyers__cards">
-                <article class="lawyer__card card">
+                <!-- <article class="lawyer__card card">
                     <div>
                         <span class="border_tr_lawyers"></span>
                         <span class="border_tl_lawyers"></span>
@@ -381,7 +382,7 @@
                     <img src="./img/arhipov.jpg" alt="" class="card__portrait">
                     <p class="card__name">Архипов Максим Константинович</p>
                     <p class="card__job">Корпоративный юрист</p>
-                </article>
+                </article> -->
             </div>
         </div>
     </section>
@@ -391,7 +392,7 @@
             <div class="feedback__wrapper">
                 <h2 class="feedback__title">Что о нас говорят клиенты</h2>
                 <div class="feedback__slider">
-                    <svg class="feedback__slider_element" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="feedback__slider_arrow  " width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="20px/arrowleft">
                             <path id="Vector"
                                 d="M14.3055 18.3333L5.97217 9.99996L14.3055 1.66663L15.7847 3.14579L8.9305 9.99996L15.7847 16.8541L14.3055 18.3333Z"
@@ -401,7 +402,7 @@
                     <svg class="feedback__slider_element" width="16" height="31" viewBox="0 0 16 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <line x1="1.07337" y1="29.9422" x2="15.1013" y2="1.18083" stroke="#E6E6E6" stroke-width="2" />
                     </svg>
-                    <svg class="feedback__slider_element" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="feedback__slider_arrow  " width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="20px/arrowright">
                             <path id="Vector"
                                 d="M6.68742 18.3333L5.20825 16.8541L12.0624 9.99996L5.20825 3.14579L6.68742 1.66663L15.0208 9.99996L6.68742 18.3333Z"
@@ -416,7 +417,7 @@
 
         <div class="container2">
             <div class="feedback__cards">
-                <article class="feedback__card">
+                <!-- <article class="feedback__card">
                     <div class="feedback__card_header">
                         <img class="feedback__card_img" src="./img/fb_loginova.png" alt="">
                         <div class="feedback__card_about">
@@ -449,7 +450,7 @@
                             генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не
                             достигнут нужный объём.</p>
                     </div>
-                </article>
+                </article> -->
             </div>
         </div>
 
@@ -475,7 +476,7 @@
 
         <div class="container2">
             <div class="useful__cards">
-                <article class="useful__card">
+                <!-- <article class="useful__card">
                     <div class="useful__card_hover"></div>
                     <div class="useful__card_eye-hover">
                         <img class="useful__card_eye" src="./img/icons/20px/show.svg" alt="">
@@ -540,7 +541,7 @@
                     <p class="useful__card_description">Современные технологии достигли такого уровня, что курс на
                         социально-ориентированный национальный проект способствует повышению качества соответствующих
                         условий активизации.</p>
-                </article>
+                </article> -->
             </div>
             <button class="button useful__button">Все новости</button>
     </section>
